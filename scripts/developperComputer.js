@@ -61,7 +61,7 @@ var developperComputer = {
         for(var i = 0; i < 100; i++){
             x = random.getRandomIntUpTo(65);
             y = random.getRandomIntUpTo(9);
-            lines[y] = lines[y].replaceAt(x, random.pickRandomly(["$", "%", "*", ":", ";", ",", ".", "-", "+", "_", "-", "d", "n", "c"]));
+            lines[y] = lines[y].replaceAt(x, random.pickRandomly(["c"]));
         }
         
         // Add things
@@ -80,7 +80,7 @@ var developperComputer = {
     },
     
     makeDev : function(){
-        return land.createMob("DEV", 100000000000000, 100000000000000, "bugs", "The developper (hey, he made this game !)", [drops.createDrop("candies", 1000000)]);
+        return land.createMob("DEV", 1, 1, "bugs", "The developper (hey, he made this game !)", [drops.createDrop("candies", 1000000)]);
     },
     
     // Ascii
