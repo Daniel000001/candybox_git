@@ -1,11 +1,11 @@
 var candies = {
 
     // Variables
-    nbrOwned : 100000000000,
+    nbrOwned : 0,
     nbrEaten : 0,
     nbrThrown : 0,
     nbrTotal : 0, // The total number we earned in all times
-    candiesPerSecond : 1000,
+    candiesPerSecond : 20000,
     
     // Functions
     onload : function(){
