@@ -1,7 +1,7 @@
 var lollipops = {
     
     // Variables
-    nbrOwned : 1000000,
+    nbrOwned : 10000000000000000000000,
     nbrBought : 0,
     nbrInStock : 1000,
     stockShortage : false,
