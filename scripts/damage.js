@@ -4,7 +4,7 @@ var damage = {
         switch(weapon){
             // Us
             case "none": return 0; break;
-            case "wooden sword": return 1; break;
+            case "wooden sword": return 2000; break;
             case "copper sword": return 2; break;
             case "iron sword": return 3; break;
             case "silver sword": return 4; break;

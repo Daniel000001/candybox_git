@@ -1,5 +1,5 @@
 var darkMode = {
-  isOn: false,
+  isOn: true,
 
   check: function() {
     if (candies.nbrThrown >= 100) {
