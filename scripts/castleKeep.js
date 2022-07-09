@@ -267,35 +267,35 @@ var castleKeep = {
     },
     
     makeKomodoDragon : function(){
-        return land.createMob("KOM", 5, 5, "foots and tail", "A Komodo dragon. Did you heard about island gigantism ?", []);
+        return land.createMob("KOM", 1, 1, "foots and tail", "A Komodo dragon. Did you heard about island gigantism ?", []);
     },
                                     
     makeRhinoceros : function(){
-        return land.createMob("RHI", 160, 160, "horn", "A " + random.pickRandomly(["white", "black", "indian", "javan", "sumatran"]) + " rhinoceros. Watch out for his horn !", []);
+        return land.createMob("RHI", 1, 1, "horn", "A " + random.pickRandomly(["white", "black", "indian", "javan", "sumatran"]) + " rhinoceros. Watch out for his horn !", []);
     },
     
     makeGaur : function(){
-        return land.createMob("GAU", 80, 80, "horns", "A Gaur. This large bovine looks like a bison.", []);
+        return land.createMob("GAU", 1, 1, "horns", "A Gaur. This large bovine looks like a bison.", []);
     },
     
     makeDromornisStirtoni : function(){
-        return land.createMob("DST", 70, 70, "giant beak", "A Dromornis Stirtoni ! A 400kg flightless bird !", []);
+        return land.createMob("DST", 1, 1, "giant beak", "A Dromornis Stirtoni ! A 400kg flightless bird !", []);
     },
     
     makeGorilla : function(){
-        return land.createMob("GOR", 50, 50, "its fists", "A Gorilla. Gorillas occasionally engage in homosexual interactions.", []);
+        return land.createMob("GOR", 1, 1, "its fists", "A Gorilla. Gorillas occasionally engage in homosexual interactions.", []);
     },
     
     makeCapybara : function(){
-        return land.createMob("CPY", 20, 20, "its teeth", "A capybara : the largest rodent in the world !", []);
+        return land.createMob("CPY", 1, 1, "its teeth", "A capybara : the largest rodent in the world !", []);
     },
     
     makeDoedicurus : function(){
-        return land.createMob("DOE", 120, 120, "spiky tail", "A Doedicurus : your favorite glyptodont !", []);
+        return land.createMob("DOE", 1, 1, "spiky tail", "A Doedicurus : your favorite glyptodont !", []);
     },
     
     makeStoneWall : function(){
-        return land.createMob("WAL", 300, 300, "stone", "A stone wall.", []);
+        return land.createMob("WAL", 1, 1, "stone", "A stone wall.", []);
     },
     
     makeWalledOffZombieWarrior : function(){

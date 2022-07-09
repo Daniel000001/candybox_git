@@ -68,8 +68,8 @@ var quest = {
         this.speed = this.getSpeed();
         
         // We set the potion & scroll use countdown
-        this.potionUseCountdown = 0;
-        this.scrollUseCountdown = 0;
+        this.potionUseCountdown = 1;
+        this.scrollUseCountdown = 1;
         
         // Not escaping at first
         this.escaping = false;
@@ -79,12 +79,12 @@ var quest = {
         
         // Not in berserk mode at first
         this.berserk = false;
-        this.berserkCountdown = 0;
+        this.berserkCountdown = 1;
         this.speed = this.getSpeed();
         
         // Not invincible at first
         this.invulnerability = false;
-        this.invulnerabilityCountdown = 0;
+        this.invulnerabilityCountdown = 1;
         
         // Not turtle at first
         this.turtle = false;
@@ -125,7 +125,7 @@ var quest = {
     },
     
     getCharacterMaxHp : function(){
-        return 100 + Math.floor(Math.pow(candies.nbrEaten, 0.4)*2.1); // This function means ~ one day of candies eaten at 1cnd/s = +200 hp
+        return 100000 + Math.floor(Math.pow(candies.nbrEaten, 0.4)*2.1); // This function means ~ one day of candies eaten at 1cnd/s = +200 hp
     },
     
     getSpeed : function(){
@@ -325,7 +325,7 @@ var quest = {
     
     beginInvulnerability : function(){
         this.invulnerability = true;
-        this.invulnerabilityCountdown = 15;
+        this.invulnerabilityCountdown = 15000;
         this.things[this.getCharacterIndex()].text = "GOD";
     },
     
@@ -388,7 +388,7 @@ var quest = {
         potions.updateOnPage();
         
         // We're tired after this quest
-        if(this.things[index].hp < this.things[index].max_hp) this.setTiredFound(this.tiredFound + 200 * (1 - (this.things[index].hp / this.things[index].max_hp)));
+        if(this.things[index].hp < this.things[index].max_hp) this.setTiredFound(this.tiredFound + 1 * (1 - (this.things[index].hp / this.things[index].max_hp)));
         if(this.escaping == false) this.setTiredTime(Math.floor(this.tiredFound));
         
         // Nothing found anymore

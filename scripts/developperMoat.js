@@ -18,7 +18,7 @@ var developperMoat = {
         if(index > 5 && index < 18){
             // If the character isn't on the platform
             if(index > 6 + this.platformPosition + 1 || index < 6 + this.platformPosition){
-                quest.escaping = true;
+                quest.escaping = false;
             }
         }
         
@@ -60,7 +60,7 @@ var developperMoat = {
 "                                                                  \n",
 "                                                                  \n",
 "                                                                  \n",
-"__________________                                    ____________\n",
+"__________________________________________________________________\n",
 "                  \\,                               ._/ /\n",
 "                    \\,                            /  \\ \\\n",
 "                     )_,                         (__   _\\\n",

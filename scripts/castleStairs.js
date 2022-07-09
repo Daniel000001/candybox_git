@@ -51,15 +51,15 @@ var castleStairs = {
     },
     
     makeNecromancer : function(){
-        return land.createMob("NEC", 150, 150, "magic staff", "A necromancer. She summons ghosts and dead stuff.", [drops.createDrop("object", "candiesConverter", true), drops.createDrop("object", "cauldron", true)]);
+        return land.createMob("NEC", 1, 1, "magic staff", "A necromancer. She summons ghosts and dead stuff.", [drops.createDrop("object", "candiesConverter", true), drops.createDrop("object", "cauldron", true)]);
     },
     
     makeGhost : function(){
-        return land.createMob("GHO", 5, 5, "spectral magic", "A Ghost. It halves the life of human beings.", []);
+        return land.createMob("GHO", 0, 0, "spectral magic", "A Ghost. It halves the life of human beings.", []);
     },
     
-    makePileOfCorpses : function(){
-        var life = 140;
+    makePilleOfCorpses : function(){
+        var life = 1;
         life += random.getRandomIntUpTo(4) * 20;
         
         return land.createMob("POC", life, life, "none", "A pile of corpses. It doesn't hurt you, but damn, it's hard to remove !", []);
